@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+
+  </style>
+</head>
+<body class="bg-white-gray">
+  <header class="bg-white sm:h-16 lg:h-24 md:ml-72 flex justify-between shadow-lg">
+    <div class=" flex-1 max-w-2xl ml-5 flex items-center mr-3 ">
+      <button id="toggle" class="text-lg w-14 sm:block md:hidden ">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="text-blue-viet bg-white border border-solid border-blue-viet p-2 mr-4 hover:bg-blue-hover hover:text-white sm:hidden lg:block">
+        <i class="fa-solid fa-plus mr-4"></i>Add New
+      </button>
+      <div class="input-container bg-white p-2 border border-solid border-neutral-500 flex items-center flex-1 sm:hidden md:block">
+        <i class="fa-solid fa-search text-neutral-500 mr-2"></i>
+        <input type="text" placeholder="Search" class="focus:border-none focus:outline-none flex-1 " >
+      </div>
+    </div>
+    <div class=" w-1/3 mr-5 flex items-center justify-between" >
+      <!-- <div class="flex-1 flex items-center bg-red-300"> -->
+        <div class="mr-4 sm:hidden md:block">
+          <p class="font-semibold">Viet Truong</p>
+          <p class="text-sm text-neutral-500" >Admin</p>
+        </div>
+        <div class="w-14 h-14 rounded-full overflow-hidden sm:hidden lg:block">
+          <img class="w-full h-auto object-cover" src="/img/profile.jpg" alt="profile picture">
+        </div>
+      <!-- </div> -->
+    
+        <button class="w-14 sm:block md:hidden mr-4">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="w-14 ">
+          <i class="fa-regular fa-bell mr-4 relative cursor-pointer">
+            <i class="fa-solid fa-period absolute text-2xl"></i>
+          </i>
+        </button>
+        <button class="w-14">
+          <i class="fa-solid fa-arrow-right-from-bracket cursor-pointer">
+          </i>
+        </button>
+      
+    </div>
+  </header>
+  <!-- nav -->
+  <nav id="nav" class="flex flex-col fixed sm:-left-full top-0 bottom-0 md:left-0 w-72 bg-blue-viet text-white ">
+    <button id="close-button" class="w-14 sm:block md:hidden ml-auto pt-5 justify-self-end">
+      <i class="fa-solid fa-square-xmark text-2xl"></i>
+    </button>
+    <div class="h-28 hover:bg-blue-hover flex pl-20 py-10">
+      <a href="">
+        <i class="fa-solid fa-house mr-4 text-2xl"></i>
+        Dashboard
+      </a>
+    </div>
+    <ul class="flex-1 flex flex-col">
+      <li class="hover:bg-blue-hover flex pl-20 py-4 cursor-pointer"><a href="">
+        <i class="fa-solid fa-file-invoice mr-4"></i>
+        Account</a>
+      </li>
+      <li class="hover:bg-blue-hover flex pl-20 py-4 cursor-pointer"><a href="#">
+        <i class="fa-regular fa-bell mr-4"></i>
+        Notifications</a>
+      </li>
+      <li class="hover:bg-blue-hover flex pl-20 py-4 cursor-pointer"><a href="#">
+        <i class="fa-regular fa-message mr-4"></i>
+        Messages</a>
+      </li>
+      <li class="hover:bg-blue-hover flex pl-20 py-4 cursor-pointer"><a href="#">
+        <i class="fa-solid fa-screwdriver-wrench mr-4"></i>
+        Tools</a>
+      </li>
+      <li class="hover:bg-blue-hover flex pl-20 py-4 cursor-pointer"><a href="#">
+        <i class="fa-solid fa-gear mr-4"></i>
+        Setting</a>
+      </li>
+    </ul>
+    <div class="hover:bg-blue-hover flex pl-20 py-4 cursor-pointer">
+      <a href="">
+        <i class="fa-solid fa-arrow-right-from-bracket mr-4"></i>Sign Out
+      </a>
+    </div>
+  </nav>
+ 
+  <div class="md:ml-72 p-4 ">
+    <h1 class="mb-4 font-bold text-3xl">Project Overview</h1>
+    <section class=" mb-5 shadow-md">
+      <h2 class="mb-4 font-semibold text-2xl underline underline-offset-1 ">Product X perience Launch</h2>
+      <div class="mb-4">
+        <p>ProductXperienceLaunch.com is our dedicated platform for the highly anticipated launch of our latest innovation, ProductXperience. This website serves as a dynamic gateway to explore the transformative potential of our groundbreaking product. With engaging content, interactive demonstrations, and valuable insights, we invite you to embark on a journey beyond a traditional product launch. ProductXperienceLaunch.com is designed to provide a unique and immersive experience, offering a glimpse into the future of innovation and how it will enhance the lives of our customers.</p>
+      </div>
+      <div class="flex text-center gap-x-7 mb-5">
+        <div class=" w-52 rounded flex justify-center text-center py-4 gap-x-3 px-1 shadow-lg cursor-pointer hover:translate-y-1 focus:translate-y-1 active:translate-y-3">
+          <i class="fa-solid fa-folder md:text-6xl sm:text-3xl text-blue-viet"></i>
+          <div class="flex flex-col justify-center text-left">
+            <span class="font-bold md:text-2xl">12</span>
+            <span>Team Members</span>
+          </div>
+        </div>
+        <div class=" w-52 rounded flex justify-center text-center py-4 gap-x-3 px-1 shadow-lg cursor-pointer hover:translate-y-1 focus:translate-y-1 active:translate-y-3">
+          <i class="fa-solid fa-circle-check md:text-6xl sm:text-3xl text-brightRedLight"></i>
+          <div class="flex flex-col justify-center text-left">
+            <span class="font-bold md:text-2xl">9</span>
+            <span>Completed</span>
+          </div>
+        </div>
+        <div class=" w-52 rounded flex justify-center text-center py-4 gap-x-3 px-1 shadow-lg cursor-pointer hover:translate-y-1 focus:translate-y-1 active:translate-y-3">
+          <!-- <i class="fa-solid fa-folder md:text-6xl sm:text-3xl text-blue-viet"></i> -->
+          <i class="fa-solid fa-paperclip md:text-6xl sm:text-3xl text-yellow-600"></i>
+          <div class="flex flex-col justify-center text-left">
+            <span class="font-bold md:text-2xl">1</span>
+            <span>Attachments</span>
+          </div>
+        </div>
+      </div>
+      <!-- progress Project -->
+      <div class="flex md:flex-row sm:flex-col gap-x-5 gap-y-5 ">
+        <div class="flex-1 shadow-lg rounded-lg ">
+          <div class=" flex justify-between p-5 shadow-sm">
+            <p>Progress Project</p>
+            <button class="cursor-pointer hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200 w-5 h-5 rounded-full flex justify-center items-center">...</button>
+          </div>
+          <!-- <div class="flex justify-center items-center p-4 ">
+            <div class=" relative bg-transparent w-40 h-40 rounded-full border-blue-viet border-14 border-solid border-l-blue-300"></div>
+            <span class="absolute text-5xl font-semibold">88%</span>
+          </div> -->
+          <div class="shadow-sm" style="width:100%; padding:20px 0; display:flex; flex-direction:column;">
+            <div class="w-full bg-gray-300 dark:bg-gray-700">
+              <div class="bg-blue-viet text-xs font-medium text-blue-100 text-center p-0.5 leading-none" style="width:60%">60%</div>
+            </div>
+            <span class="p-3 text-sm">Start Date: March 6, 2021</span>
+            <span class="p-3 text-sm">Due date: January 10, 2022</span>
+          </div>
+          <div class="p-3">
+            <div class="flex">
+              <button class="w-5 h-5 rounded-full bg-blue-viet mr-2 mb-2 flex justify-between text-center"></button>
+              <span>Completed</span>
+            </div>
+            <div class="flex">
+              <button class="w-5 h-5 rounded-full bg-gray-300 mr-2 flex justify-between text-center"></button>
+              <span>In Progress</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1  bg-slate-500 p-3 rounded-lg shadow-md">
+          <div class="flex gap-x-3 mb-3">
+            <div class="w-7 h-7 rounded-full overflow-hidden">
+              <img class="object-cover w-full h-auto" src="/img/profile.jpg" alt="Profile Picture">
+            </div>
+            <div>
+              <div class="bg-gray-comment p-3 rounded-2xl">
+                <span class="font-semibold text-xs">Truong Viet Hoang Viet</span>
+                <p>They just launched a website called ProductXperienceLaunch.com.</p>
+              </div>
+              <div class="flex gap-x-5 text-sm">
+                <span class="font-bold text-white cursor-pointer">Like</span>
+                <span class="font-bold text-white cursor-pointer">Reply</span>
+                <span class="text-white">12h</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-3">
+            <div class="w-7 h-7 rounded-full overflow-hidden">
+              <img class="object-cover w-full h-auto" src="/img/profile.jpg" alt="Profile Picture">
+            </div>
+            <div>
+              <div class="bg-gray-comment p-3 rounded-2xl">
+                <span class="font-semibold text-xs">Alex Tran</span>
+                <p>Yeah, I spent some time on the site, and I must say, it's quite impressive 🙂.</p>
+              </div>
+              <div class="flex gap-x-5 text-sm">
+                <span class="font-bold text-white cursor-pointer">Like</span>
+                <span class="font-bold text-white cursor-pointer">Reply</span>
+                <span class="text-white">12h</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <i class="fa-solid fa-angles-right text-white"></i>
+            <span class="mr-auto cursor-pointer text-white-gray">View 18+ comments</span>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="mb-5 shadow-md">
+      <h2 class="mb-4 font-semibold text-2xl underline underline-offset-1 ">Team Connect Portal</h2>
+      <div class="mb-4">
+        <p>TeamConnectPortal.com is a dedicated online platform designed to enhance collaboration and connectivity within your organization. This robust portal serves as a central hub for your team, making it easier than ever to share information, resources, and insights.</p>
+      </div>
+      <div class="flex text-center gap-x-7 mb-5">
+        <div class=" w-52 rounded flex justify-center text-center py-4 gap-x-3 px-1 shadow-lg cursor-pointer hover:translate-y-1 focus:translate-y-1 active:translate-y-3">
+          <i class="fa-solid fa-folder md:text-6xl sm:text-3xl text-blue-viet"></i>
+          <div class="flex flex-col justify-center text-left">
+            <span class="font-bold md:text-2xl">4</span>
+            <span>Team Members</span>
+          </div>
+        </div>
+        <div class=" w-52 rounded flex justify-center text-center py-4 gap-x-3 px-1 shadow-lg cursor-pointer hover:translate-y-1 focus:translate-y-1 active:translate-y-3">
+          <i class="fa-solid fa-circle-check md:text-6xl sm:text-3xl text-brightRedLight"></i>
+          <div class="flex flex-col justify-center text-left">
+            <span class="font-bold md:text-2xl">9</span>
+            <span>Completed</span>
+          </div>
+        </div>
+        <div class=" w-52 rounded flex justify-center text-center py-4 gap-x-3 px-1 shadow-lg cursor-pointer hover:translate-y-1 focus:translate-y-1 active:translate-y-3">
+          <!-- <i class="fa-solid fa-folder md:text-6xl sm:text-3xl text-blue-viet"></i> -->
+          <i class="fa-solid fa-paperclip md:text-6xl sm:text-3xl text-yellow-600"></i>
+          <div class="flex flex-col justify-center text-left">
+            <span class="font-bold md:text-2xl">0</span>
+            <span>Attachments</span>
+          </div>
+        </div>
+      </div>
+      <!-- progress Project -->
+      <div class="flex md:flex-row sm:flex-col gap-x-5 gap-y-5 ">
+        <div class="flex-1 shadow-lg rounded-lg ">
+          <div class=" flex justify-between p-5 shadow-sm">
+            <p>Progress Project</p>
+            <button class="cursor-pointer hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200 w-5 h-5 rounded-full flex justify-center items-center">...</button>
+          </div>
+          <!-- <div class="flex justify-center items-center p-4 ">
+            <div class=" relative bg-transparent w-40 h-40 rounded-full border-blue-viet border-14 border-solid border-l-blue-300"></div>
+            <span class="absolute text-5xl font-semibold">88%</span>
+          </div> -->
+          <div class="shadow-sm" style="width:100%; padding:20px 0; display:flex; flex-direction:column;">
+            <div class="w-full bg-gray-300 dark:bg-gray-700">
+              <div class="bg-blue-viet text-xs font-medium text-blue-100 text-center p-0.5 leading-none" style="width:90%">90%</div>
+            </div>
+            <span class="p-3 text-sm">Start date: April 15, 2021</span>
+            <span class="p-3 text-sm">Due date: January 15, 2022</span>
+          </div>
+          <div class="p-3">
+            <div class="flex">
+              <button class="w-5 h-5 rounded-full bg-blue-viet mr-2 mb-2 flex justify-between text-center"></button>
+              <span>Completed</span>
+            </div>
+            <div class="flex">
+              <button class="w-5 h-5 rounded-full bg-gray-300 mr-2 flex justify-between text-center"></button>
+              <span>In Progress</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1  bg-slate-500 p-3 rounded-lg shadow-md">
+          <div class="flex gap-x-3 mb-3">
+            <div class="w-7 h-7 rounded-full overflow-hidden">
+              <img class="object-cover w-full h-auto" src="/img/profile.jpg" alt="Profile Picture">
+            </div>
+            <div>
+              <div class="bg-gray-comment p-3 rounded-2xl">
+                <span class="font-semibold text-xs">Tom Tran</span>
+                <p>It's been a game-changer for our team's workflow!!!</p>
+              </div>
+              <div class="flex gap-x-5 text-sm">
+                <span class="font-bold text-white cursor-pointer">Like</span>
+                <span class="font-bold text-white cursor-pointer">Reply</span>
+                <span class="text-white">12h</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-3">
+            <div class="w-7 h-7 rounded-full overflow-hidden">
+              <img class="object-cover w-full h-auto" src="/img/profile.jpg" alt="Profile Picture">
+            </div>
+            <div>
+              <div class="bg-gray-comment p-3 rounded-2xl">
+                <span class="font-semibold text-xs">Herry Nguyen</span>
+                <p> I can easily access all our team documents and communication in one place🙂.</p>
+              </div>
+              <div class="flex gap-x-5 text-sm">
+                <span class="font-bold text-white cursor-pointer">Like</span>
+                <span class="font-bold text-white cursor-pointer">Reply</span>
+                <span class="text-white">12h</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <i class="fa-solid fa-angles-right text-white"></i>
+            <span class="mr-auto cursor-pointer text-white-gray">View 1 comments</span>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class=" shadow-md">
+      <h2 class="mb-4 font-semibold text-2xl underline underline-offset-1 ">Tesla model 10</h2>
+      <div class="mb-4">
+        <p>Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas, which designs and manufactures electric vehicles, stationary battery energy storage devices from home to grid-scale, solar panels and solar shingles, and related products and services.</p>
+      </div>
+      <div class="flex text-center gap-x-7 mb-5">
+        <div class=" w-52 rounded flex justify-center text-center py-4 gap-x-3 px-1 shadow-lg cursor-pointer hover:translate-y-1 focus:translate-y-1 active:translate-y-3">
+          <i class="fa-solid fa-folder md:text-6xl sm:text-3xl text-blue-viet"></i>
+          <div class="flex flex-col justify-center text-left">
+            <span class="font-bold md:text-2xl">16</span>
+            <span>Team Members</span>
+          </div>
+        </div>
+        <div class=" w-52 rounded flex justify-center text-center py-4 gap-x-3 px-1 shadow-lg cursor-pointer hover:translate-y-1 focus:translate-y-1 active:translate-y-3">
+          <i class="fa-solid fa-circle-check md:text-6xl sm:text-3xl text-brightRedLight"></i>
+          <div class="flex flex-col justify-center text-left">
+            <span class="font-bold md:text-2xl">32</span>
+            <span>Completed</span>
+          </div>
+        </div>
+        <div class=" w-52 rounded flex justify-center text-center py-4 gap-x-3 px-1 shadow-lg cursor-pointer hover:translate-y-1 focus:translate-y-1 active:translate-y-3">
+          <!-- <i class="fa-solid fa-folder md:text-6xl sm:text-3xl text-blue-viet"></i> -->
+          <i class="fa-solid fa-paperclip md:text-6xl sm:text-3xl text-yellow-600"></i>
+          <div class="flex flex-col justify-center text-left">
+            <span class="font-bold md:text-2xl">11</span>
+            <span>Attachments</span>
+          </div>
+        </div>
+      </div>
+      <!-- progress Project -->
+      <div class="flex md:flex-row sm:flex-col gap-x-5 gap-y-5 ">
+        <div class="flex-1 shadow-lg rounded-lg ">
+          <div class=" flex justify-between p-5 shadow-sm">
+            <p>Progress Project</p>
+            <button class="cursor-pointer hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200 w-5 h-5 rounded-full flex justify-center items-center">...</button>
+          </div>
+          <!-- <div class="flex justify-center items-center p-4 ">
+            <div class=" relative bg-transparent w-40 h-40 rounded-full border-blue-viet border-14 border-solid border-l-blue-300"></div>
+            <span class="absolute text-5xl font-semibold">88%</span>
+          </div> -->
+          <div class="shadow-sm" style="width:100%; padding:20px 0; display:flex; flex-direction:column;">
+            <div class="w-full bg-gray-300 dark:bg-gray-700">
+              <div class="bg-blue-viet text-xs font-medium text-blue-100 text-center p-0.5 leading-none" style="width:80%">80%</div>
+            </div>
+            <span class="p-3 text-sm">Start date: July 22, 2021</span>
+            <span class="p-3 text-sm">Due date: April 23, 2021</span>
+          </div>
+          <div class="p-3">
+            <div class="flex">
+              <button class="w-5 h-5 rounded-full bg-blue-viet mr-2 mb-2 flex justify-between text-center"></button>
+              <span>Completed</span>
+            </div>
+            <div class="flex">
+              <button class="w-5 h-5 rounded-full bg-gray-300 mr-2 flex justify-between text-center"></button>
+              <span>In Progress</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1  bg-slate-500 p-3 rounded-lg shadow-md">
+          <div class="flex gap-x-3 mb-3">
+            <div class="w-7 h-7 rounded-full overflow-hidden">
+              <img class="object-cover w-full h-auto" src="/img/profile.jpg" alt="Profile Picture">
+            </div>
+            <div>
+              <div class="bg-gray-comment p-3 rounded-2xl">
+                <span class="font-semibold text-xs">Nghia Tran</span>
+                <p>Tesla cars have revolutionized the automotive industry with their exceptional performance.</p>
+              </div>
+              <div class="flex gap-x-5 text-sm">
+                <span class="font-bold text-white cursor-pointer">Like</span>
+                <span class="font-bold text-white cursor-pointer">Reply</span>
+                <span class="text-white">12h</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-3">
+            <div class="w-7 h-7 rounded-full overflow-hidden">
+              <img class="object-cover w-full h-auto" src="/img/profile.jpg" alt="Profile Picture">
+            </div>
+            <div>
+              <div class="bg-gray-comment p-3 rounded-2xl">
+                <span class="font-semibold text-xs">Thoa Nguyen</span>
+                <p> In a world where technology and sustainability go hand in hand, my journey with the Tesla Model S has been nothing short of awe-inspiring🙂.</p>
+              </div>
+              <div class="flex gap-x-5 text-sm">
+                <span class="font-bold text-white cursor-pointer">Like</span>
+                <span class="font-bold text-white cursor-pointer">Reply</span>
+                <span class="text-white">12h</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <i class="fa-solid fa-angles-right text-white"></i>
+            <span class="mr-auto cursor-pointer text-white-gray">View 31+ comments</span>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+
+  <script>
+    document.getElementById('toggle')
+      .addEventListener('click', ()=> {
+        document.getElementById('nav').classList.toggle('sm:-left-full');
+        document.getElementById('nav').classList.toggle('left-0');
+      })
+    document.getElementById('close-button')
+    .addEventListener('click', ()=> {
+        document.getElementById('nav').classList.toggle('sm:-left-full');
+        document.getElementById('nav').classList.toggle('left-0');
+      })
+  </script>
+</body>
+</html>
